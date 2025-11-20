@@ -1,0 +1,26 @@
+export type ChartSalesProps = {
+  janPv: number;
+  janUv: number;
+  fevPv: number;
+  fevUv: number;
+  marPv: number;
+  marUv: number;
+  abrPv: number;
+  abrUv: number;
+  maiPv: number;
+  maiUv: number;
+  junPv: number;
+  junUv: number;
+  julPv: number;
+  julUv: number;
+  agoPv: number;
+  agoUv: number;
+  setPv: number;
+  setUv: number;
+  outPv: number;
+  outUv: number;
+  novPv: number;
+  novUv: number;
+  dezPv: number;
+  dezUv: number;
+};
