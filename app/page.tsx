@@ -1,9 +1,23 @@
-import Image from "next/image";
+import CardsStats from "@/public/src/components/CardsStats/CardsStats";
+import { CardsMocks } from "@/public/src/mocks/CardsMocks";
 
 export default function Home() {
   return (
-    <div>
-      <h1 className="text-3xl ">Hello word</h1>
+    <div className="">
+      <div className=" items-center justify-center flex">
+        <h1 className="text-white font-bold text-4xl">Dashboard</h1>
+      </div>
+      <div className="flex items-center justify-center gap-4 mt-4">
+        {CardsMocks.map((item, index) => (
+          <CardsStats
+            key={index}
+            title={item.title}
+            value={item.value}
+            icon={item.icon}
+            BalanceStonks={item.BalanceStonks}
+          />
+        ))}
+      </div>
     </div>
   );
 }
