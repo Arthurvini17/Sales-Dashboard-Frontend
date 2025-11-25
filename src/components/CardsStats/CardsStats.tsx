@@ -1,14 +1,9 @@
-type CardsStatsProps = {
-  title: string;
-  value: string;
-  icon: React.ElementType;
-  BalanceStonks: string;
-};
+import { CardsStatsProps } from "./CardsStatsProps";
 
 export default function CardsStats({
   title,
   value,
-  icon: Icon,
+  Icon,
   BalanceStonks,
 }: CardsStatsProps) {
   return (
